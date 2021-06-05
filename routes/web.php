@@ -15,4 +15,7 @@ use App\Http\Controllers\OrdersController;
 */
 
 Route::get('/',[OrdersController::class, "all"]);
-Route::get('/user',[OrdersController::class, "getUsers"]);
+Route::get('/myuser',[OrdersController::class, "getUsers"]);
+Route::get('/test123',function(){
+    echo "why";
+});
